@@ -1,0 +1,87 @@
+{
+  "name": "@openimis/fe",
+  "version": "24.04+",
+  "license": "AGPL-3.0-only",
+  "proxy": "http://localhost:8000/",
+  "homepage": "http://localhost:3000/front",
+  "dependencies": {
+    "@date-io/core": "^1.3.13",
+    "@date-io/moment": "^1.3.13",
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@material-ui/pickers": "^3.2.10",
+    "@openimis/fe-calculation": "file:openimis_modules_local/openimis-fe-calculation_js",
+    "@openimis/fe-contract": "file:openimis_modules_local/openimis-fe-contract_js",
+    "@openimis/fe-contribution_plan": "file:openimis_modules_local/openimis-fe-contribution_plan_js",
+    "@openimis/fe-core": "file:openimis_modules_local/openimis-fe-core_js",
+    "@openimis/fe-coremis_language_pack": "file:openimis_modules_local/openimis-fe-coremis_language_pack_js",
+    "@openimis/fe-deduplication": "file:openimis_modules_local/openimis-fe-deduplication_js",
+    "@openimis/fe-grievance_social_protection": "file:openimis_modules_local/openimis-fe-grievance_social_protection_js",
+    "@openimis/fe-home": "file:openimis_modules_local/openimis-fe-home_js",
+    "@openimis/fe-individual": "file:openimis_modules_local/openimis-fe-individual_js",
+    "@openimis/fe-invoice": "file:openimis_modules_local/openimis-fe-invoice_js",
+    "@openimis/fe-kobo_connect": "file:openimis_modules_local/openimis-fe-kobo_connect_js",
+    "@openimis/fe-language_fr": "file:openimis_modules_local/openimis-fe-language_fr_js",
+    "@openimis/fe-location": "file:openimis_modules_local/openimis-fe-location_js",
+    "@openimis/fe-medical": "file:openimis_modules_local/openimis-fe-medical_js",
+    "@openimis/fe-opensearch_reports": "file:openimis_modules_local/openimis-fe-opensearch_reports_js",
+    "@openimis/fe-payment_cycle": "file:openimis_modules_local/openimis-fe-payment_cycle_js",
+    "@openimis/fe-payroll": "file:openimis_modules_local/openimis-fe-payroll_js",
+    "@openimis/fe-policyholder": "file:openimis_modules_local/openimis-fe-policyholder_js",
+    "@openimis/fe-profile": "file:openimis_modules_local/openimis-fe-profile_js",
+    "@openimis/fe-social_protection": "file:openimis_modules_local/openimis-fe-social_protection_js",
+    "@openimis/fe-tasks_management": "file:openimis_modules_local/openimis-fe-tasks_management_js",
+    "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
+    "lodash": "^4.17.15",
+    "lodash-uuid": "^0.0.3",
+    "moment": "^2.25.3",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-autosuggest": "^10.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-intl": "^5.8.1",
+    "react-redux": "^7.2.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.0.5",
+    "redux-api-middleware": "^3.2.1",
+    "redux-thunk": "^2.3.0",
+    "shelljs": "^0.8.4",
+    "@openimis/fe-admin": "file:openimis_modules_local/openimis-fe-admin_js"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "load-config": "node ./openimis-config.js",
+    "postinstall": "node script/postinstall.js",
+    "format": "prettier src -w",
+    "check-package": "node script/check-package.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "rules": {
+      "space-before-function-paren": 0,
+      "react/jsx-boolean-value": 0
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.1",
+    "prettier": "^2.3.2"
+  }
+}
