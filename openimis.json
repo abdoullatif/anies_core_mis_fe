@@ -141,6 +141,10 @@
        {
             "name": "PayrollModule",
             "npm": "@openimis/fe-payroll@https://github.com/openimis/openimis-fe-payroll_js#develop"
+        },
+        {
+          "name": "KoboConnectModule",
+          "npm": "@abdoullatif/fe-kobo_connect@https://github.com/openimis/openimis-fe-kobo_connect_js#dev"
         }
     ]
 }
