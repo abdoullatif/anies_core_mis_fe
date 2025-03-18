@@ -6,7 +6,7 @@ const { argv } = require('process');
 const { has } = require('lodash');
 
 
-function downloadModulesLocallyBasedOnImisJson(){
+function downloadModulesLocallyBasedOnImisJson(targetDir){
     imisJsonPath = path.normalize(path.join(__dirname, '..'));
     fs.readFile(path.join(imisJsonPath, 'openimis.json'), 'utf8', (error, data) => {
         if(error){
@@ -19,9 +19,10 @@ function downloadModulesLocallyBasedOnImisJson(){
             moduleName = module["npm"].split('/')[1]
             moduleName = "openimis-"+moduleName.split('@')[0]+"_js"
             moduleRepoUrl = 'https://github.com/openimis/'+moduleName+'.git';
-            shell.exec('node installModuleLocally.js '+moduleRepoUrl +' develop');
+            shell.exec('node installModuleLocally.js '+moduleRepoUrl +' develop ' + targetDir);
         });
     })
 }
 
-downloadModulesLocallyBasedOnImisJson();
+const targetDir = argv[2] || 'modules_locales'; // Par défaut à 'modules_locales' si aucun argument n'est fourni
+downloadModulesLocallyBasedOnImisJson(targetDir);
