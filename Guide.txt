@@ -1,0 +1,8 @@
+node v16.XX
+1. npm install
+2. yarn load-config
+3. yarn install
+4. Installer les modules en locale: 
+    node dev_tools/installModuleLocallyAll.js release/25.04 openimis_modules_local
+5. Démarrer le server en local:
+    yarn start

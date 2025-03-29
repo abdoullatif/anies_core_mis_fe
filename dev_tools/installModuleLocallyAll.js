@@ -6,7 +6,7 @@ const { argv } = require('process');
 const { has } = require('lodash');
 
 
-function downloadModulesLocallyBasedOnImisJson(targetDir){
+function downloadModulesLocallyBasedOnImisJson(branch, targetDir){
     imisJsonPath = path.normalize(path.join(__dirname, '..'));
     fs.readFile(path.join(imisJsonPath, 'openimis.json'), 'utf8', (error, data) => {
         if(error){
@@ -19,10 +19,13 @@ function downloadModulesLocallyBasedOnImisJson(targetDir){
             moduleName = module["npm"].split('/')[1]
             moduleName = "openimis-"+moduleName.split('@')[0]+"_js"
             moduleRepoUrl = 'https://github.com/openimis/'+moduleName+'.git';
-            shell.exec('node installModuleLocally.js '+moduleRepoUrl +' develop ' + targetDir);
+            shell.exec('node installModuleLocally.js '+moduleRepoUrl + ' ' + branch + ' ' + targetDir);
         });
     })
 }
 
-const targetDir = argv[2] || 'modules_locales'; // Par défaut à 'modules_locales' si aucun argument n'est fourni
-downloadModulesLocallyBasedOnImisJson(targetDir);
+const branch = argv[2]; // Par défaut à 'modules_locales' si aucun argument n'est fourni
+const targetDir = argv[3] || 'modules_locales'; // Par défaut à 'modules_locales' si aucun argument n'est fourni
+downloadModulesLocallyBasedOnImisJson(branch, targetDir);
+
+// node dev_tools/installModuleLocallyAll.js release/25.04 openimis_modules_local

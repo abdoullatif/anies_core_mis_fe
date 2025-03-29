@@ -1,8 +1,8 @@
 {
   "name": "@openimis/fe",
-  "version": "24.04+",
+  "version": "25.04",
   "license": "AGPL-3.0-only",
-  "proxy": "http://localhost:8000/",
+  "proxy": "http://localhost:8000",
   "homepage": "http://localhost:3000/front",
   "dependencies": {
     "@date-io/core": "^1.3.13",
@@ -11,24 +11,33 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.58",
     "@material-ui/pickers": "^3.2.10",
+    "@openimis/fe-admin": "file:openimis_modules_local/openimis-fe-admin_js",
     "@openimis/fe-calculation": "file:openimis_modules_local/openimis-fe-calculation_js",
+    "@openimis/fe-claim": "file:openimis_modules_local/openimis-fe-claim_js",
+    "@openimis/fe-claim_batch": "file:openimis_modules_local/openimis-fe-claim_batch_js",
+    "@openimis/fe-claim_sampling": "file:openimis_modules_local/openimis-fe-claim_sampling_js",
     "@openimis/fe-contract": "file:openimis_modules_local/openimis-fe-contract_js",
+    "@openimis/fe-contribution": "file:openimis_modules_local/openimis-fe-contribution_js",
     "@openimis/fe-contribution_plan": "file:openimis_modules_local/openimis-fe-contribution_plan_js",
     "@openimis/fe-core": "file:openimis_modules_local/openimis-fe-core_js",
-    "@openimis/fe-coremis_language_pack": "file:openimis_modules_local/openimis-fe-coremis_language_pack_js",
     "@openimis/fe-deduplication": "file:openimis_modules_local/openimis-fe-deduplication_js",
     "@openimis/fe-grievance_social_protection": "file:openimis_modules_local/openimis-fe-grievance_social_protection_js",
     "@openimis/fe-home": "file:openimis_modules_local/openimis-fe-home_js",
     "@openimis/fe-individual": "file:openimis_modules_local/openimis-fe-individual_js",
+    "@openimis/fe-insuree": "file:openimis_modules_local/openimis-fe-insuree_js",
     "@openimis/fe-invoice": "file:openimis_modules_local/openimis-fe-invoice_js",
-    "@openimis/fe-kobo_connect": "file:openimis_modules_local/openimis-fe-kobo_connect_js",
     "@openimis/fe-language_fr": "file:openimis_modules_local/openimis-fe-language_fr_js",
     "@openimis/fe-location": "file:openimis_modules_local/openimis-fe-location_js",
     "@openimis/fe-medical": "file:openimis_modules_local/openimis-fe-medical_js",
+    "@openimis/fe-medical_pricelist": "file:openimis_modules_local/openimis-fe-medical_pricelist_js",
     "@openimis/fe-opensearch_reports": "file:openimis_modules_local/openimis-fe-opensearch_reports_js",
+    "@openimis/fe-payer": "file:openimis_modules_local/openimis-fe-payer_js",
+    "@openimis/fe-payment": "file:openimis_modules_local/openimis-fe-payment_js",
     "@openimis/fe-payment_cycle": "file:openimis_modules_local/openimis-fe-payment_cycle_js",
     "@openimis/fe-payroll": "file:openimis_modules_local/openimis-fe-payroll_js",
+    "@openimis/fe-policy": "file:openimis_modules_local/openimis-fe-policy_js",
     "@openimis/fe-policyholder": "file:openimis_modules_local/openimis-fe-policyholder_js",
+    "@openimis/fe-product": "file:openimis_modules_local/openimis-fe-product_js",
     "@openimis/fe-profile": "file:openimis_modules_local/openimis-fe-profile_js",
     "@openimis/fe-social_protection": "file:openimis_modules_local/openimis-fe-social_protection_js",
     "@openimis/fe-tasks_management": "file:openimis_modules_local/openimis-fe-tasks_management_js",
@@ -44,12 +53,12 @@
     "react-helmet": "^6.1.0",
     "react-intl": "^5.8.1",
     "react-redux": "^7.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "4.0.1",
     "redux": "^4.0.5",
     "redux-api-middleware": "^3.2.1",
     "redux-thunk": "^2.3.0",
     "shelljs": "^0.8.4",
-    "@openimis/fe-admin": "file:openimis_modules_local/openimis-fe-admin_js"
+    "@openimis/fe-tools": "file:openimis_modules_local/openimis-fe-tools_js"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -79,6 +88,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "caniuse-lite": "1.0.30001688"
   },
   "devDependencies": {
     "http-proxy-middleware": "^2.0.1",
