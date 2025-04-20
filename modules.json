@@ -1,0 +1,128 @@
+{
+  "modules": [
+    {
+      "name": "CoreModule",
+      "npm": "@egg=openimis-fe-core_js@https://github.com/openimis/openimis-fe-core_js#release/25.04"
+    },
+    {
+      "name": "IndividualModule",
+      "npm": "@egg=openimis-fe-individual_js@https://github.com/openimis/openimis-fe-individual_js#release/25.04"
+    },
+    {
+      "name": "SocialProtectionModule",
+      "npm": "@egg=openimis-fe-social_protection_js@https://github.com/openimis/openimis-fe-social_protection_js#release/25.04"
+    },
+    {
+      "name": "OpenSearchReportsModule",
+      "npm": "@egg=openimis-fe-opensearch_reports_js@https://github.com/openimis/openimis-fe-opensearch_reports_js#release/25.04"
+    },
+    {
+      "name": "HomeModule",
+      "npm": "@egg=openimis-fe-home_js@https://github.com/openimis/openimis-fe-home_js#release/25.04"
+    },
+    {
+      "name": "LocationModule",
+      "npm": "@egg=openimis-fe-location_js@https://github.com/openimis/openimis-fe-location_js#release/25.04"
+    },
+    {
+      "name": "InsureeModule",
+      "npm": "@egg=openimis-fe-insuree_js@https://github.com/openimis/openimis-fe-insuree_js#release/25.04"
+    },
+    {
+      "name": "MedicalModule",
+      "npm": "@egg=openimis-fe-medical_js@https://github.com/openimis/openimis-fe-medical_js#release/25.04"
+    },
+    {
+      "name": "MedicalPriceListModule",
+      "npm": "@egg=openimis-fe-medical_pricelist_js@https://github.com/openimis/openimis-fe-medical_pricelist_js#release/25.04"
+    },
+    {
+      "name": "ProductModule",
+      "npm": "@egg=openimis-fe-product_js@https://github.com/openimis/openimis-fe-product_js#release/25.04"
+    },
+    {
+      "name": "PolicyModule",
+      "npm": "@egg=openimis-fe-policy_js@https://github.com/openimis/openimis-fe-policy_js#release/25.04"
+    },
+    {
+      "name": "PayerModule",
+      "npm": "@egg=openimis-fe-payer_js@https://github.com/openimis/openimis-fe-payer_js#release/25.04"
+    },
+    {
+      "name": "ContributionModule",
+      "npm": "@egg=openimis-fe-contribution_js@https://github.com/openimis/openimis-fe-contribution_js#release/25.04"
+    },
+    {
+      "name": "PaymentModule",
+      "npm": "@egg=openimis-fe-payment_js@https://github.com/openimis/openimis-fe-payment_js#release/25.04"
+    },
+    {
+      "name": "ClaimModule",
+      "npm": "@egg=openimis-fe-claim_js@https://github.com/openimis/openimis-fe-claim_js#release/25.04"
+    },
+    {
+      "name": "ClaimBatchModule",
+      "npm": "@egg=openimis-fe-claim_batch_js@https://github.com/openimis/openimis-fe-claim_batch_js#release/25.04"
+    },
+    {
+      "name": "AdminModule",
+      "npm": "@egg=openimis-fe-admin_js@https://github.com/openimis/openimis-fe-admin_js#release/25.04"
+    },
+    {
+      "name": "ToolsModule",
+      "npm": "@egg=openimis-fe-tools_js@https://github.com/sackofils/openimis-fe-tools_js#release/25.04"
+    },
+    {
+      "name": "ProfileModule",
+      "npm": "@egg=openimis-fe-profile_js@https://github.com/openimis/openimis-fe-profile_js#release/25.04"
+    },
+    {
+      "name": "CalculationModule",
+      "npm": "@egg=openimis-fe-calculation_js@https://github.com/openimis/openimis-fe-calculation_js#release/25.04"
+    },
+    {
+      "name": "PolicyHolderModule",
+      "npm": "@egg=openimis-fe-policyholder_js@https://github.com/openimis/openimis-fe-policyholder_js#release/25.04"
+    },
+    {
+      "name": "ContributionPlanModule",
+      "npm": "@egg=openimis-fe-contribution_plan_js@https://github.com/openimis/openimis-fe-contribution_plan_js#release/25.04"
+    },
+    {
+      "name": "PaymentCycleModule",
+      "npm": "@egg=openimis-fe-payment_cycle_js@https://github.com/openimis/openimis-fe-payment_cycle_js#release/25.04"
+    },
+    {
+      "name": "ContractModule",
+      "npm": "@egg=openimis-fe-contract_js@https://github.com/openimis/openimis-fe-contract_js#release/25.04"
+    },
+    {
+      "name": "TasksManagementModule",
+      "npm": "@egg=openimis-fe-tasks_management_js@https://github.com/openimis/openimis-fe-tasks_management_js#release/25.04"
+    },
+    {
+      "name": "InvoiceModule",
+      "npm": "@egg=openimis-fe-invoice_js@https://github.com/openimis/openimis-fe-invoice_js#release/25.04"
+    },
+    {
+      "name": "GrievanceSocialProtectionModule",
+      "npm": "@egg=openimis-fe-grievance_social_protection_js@https://github.com/openimis/openimis-fe-grievance_social_protection_js#release/25.04"
+    },
+    {
+      "name": "LanguageFrModule",
+      "npm": "@egg=openimis-fe-language_fr_js@https://github.com/openimis/openimis-fe-language_fr_js#release/25.04"
+    },
+    {
+      "name": "ClaimSamplingModule",
+      "npm": "@egg=openimis-fe-claim_sampling_js@https://github.com/openimis/openimis-fe-claim_sampling_js#release/25.04"
+    },
+    {
+      "name": "DeduplicationModule",
+      "npm": "@egg=openimis-fe-deduplication_js@https://github.com/openimis/openimis-fe-deduplication_js#release/25.04"
+    },
+    {
+      "name": "PayrollModule",
+      "npm": "@egg=openimis-fe-payroll_js@https://github.com/openimis/openimis-fe-payroll_js#release/25.04"
+    }
+  ]
+}
