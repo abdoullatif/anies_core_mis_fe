@@ -24,8 +24,20 @@ function downloadModulesLocallyBasedOnImisJson(branch, targetDir){
     })
 }
 
-const branch = argv[2]; // Par défaut à 'modules_locales' si aucun argument n'est fourni
-const targetDir = argv[3] || 'modules_locales'; // Par défaut à 'modules_locales' si aucun argument n'est fourni
+const branch = argv[2] || 'release/25.04'; // Par défaut à 'release/25.04' si aucun argument n'est fourni
+const targetDir = argv[3] || 'openimis_modules_local'; // Par défaut à 'openimis_modules_local' si aucun argument n'est fourni
 downloadModulesLocallyBasedOnImisJson(branch, targetDir);
 
+// yarn load-config
+// yarn install
 // node dev_tools/installModuleLocallyAll.js release/25.04 openimis_modules_local
+
+// yarn start
+
+// yarn build
+
+// yarn link
+
+// node dev_tools/installModuleLocallyAll.js release/25.04 openimis_modules_local
+
+//before run this command, npm install shelljs lodash

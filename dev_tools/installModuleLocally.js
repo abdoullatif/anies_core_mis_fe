@@ -8,7 +8,7 @@ const path = require('path');
 const myArgs = process.argv.slice(2);
 const moduleRepoUrl = myArgs[0];
 const branch = myArgs[1];
-const targetDir = myArgs[2];
+const targetDir = myArgs[2] || 'openimis_modules_local';
 
 const moduleName = moduleRepoUrl.split('/').pop().split('.')[0];
 const splitedModuleName = moduleName.split('openimis-')[1].split('_js')[0];
@@ -17,10 +17,40 @@ const separatedName = splitedModuleName.split('-')[1];
 
 
 // Helper functions (to be implemented)
+function isAlreadyLinkedInAssembly(targetDir, moduleName, packageScopeName){
+    try {
+        const rootPkgPath = path.join(__dirname, '..', 'package.json');
+        const pkgStr = fs.readFileSync(rootPkgPath, 'utf8');
+        const pkg = JSON.parse(pkgStr);
+        const depKey = packageScopeName; // e.g. @openimis/fe-core
+        const depVal = pkg && pkg.dependencies && pkg.dependencies[depKey];
+        if (!depVal) return false;
+        // Consider any file:... dependency as already linked locally
+        if (typeof depVal === 'string' && depVal.startsWith('file:')) {
+            // Optionally verify it points to our expected folder
+            const rel = depVal.replace(/^file:/, '');
+            const expectedRel1 = path.join(targetDir, moduleName); // openimis_modules_local/openimis-fe-xxx_js
+            // Normalize both to compare
+            const absDep = path.resolve(path.join(__dirname, '..'), rel);
+            const absExpected = path.resolve(path.join(__dirname, '..', expectedRel1));
+            if (absDep === absExpected) return true;
+            // If different local path, still consider as locally linked → skip
+            return true;
+        }
+        return false;
+    } catch (e) {
+        return false;
+    }
+}
 function getLocalVersion() {
     // Read version from package.json
-    const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-    return packageJson.version;
+    try {
+        const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+        return packageJson.version;
+    } catch (error) {
+        console.log('No package.json found, assuming version 0.0.0');
+        return '0.0.0';
+    }
 }
 
 function getRemoteVersion(repoUrl, branch) {
@@ -53,44 +83,56 @@ function downloadModule(moduleRepoUrl, branch, targetDir) {
         console.log("error : "+error);
     }
 
+    // Si déjà lié localement dans le package.json de l'assembly, passer au module suivant
+    const packageScopeName = '@openimis/' + splitedModuleName;
+    if (isAlreadyLinkedInAssembly(targetDir, moduleName, packageScopeName)) {
+        console.log(`Skip: dependency '${packageScopeName}' already points to a local folder in package.json.`);
+        return;
+    }
+
     //go to target directory
     shell.cd(targetPath);
 
     if (fs.existsSync(moduleName)) {
         // Module exists locally, check versions
         shell.cd(moduleName);
-        const localVersion = getLocalVersion();
-        const remoteVersion = getRemoteVersion(moduleRepoUrl, branch);
-
-        if (compareVersions(remoteVersion, localVersion) > 0) {
-            console.log(`Updating module from ${localVersion} to ${remoteVersion}`);
-            shell.exec('git fetch');
-            shell.exec(`git checkout ${branch}`);
-            shell.exec('git pull');
+        
+        // Vérifier que package.json existe
+        if (!shell.test('-f', 'package.json')) {
+            console.log('No package.json found in module directory, cloning fresh...');
+            shell.cd('..');
+            shell.rm('-rf', moduleName);
+            // Continuer avec le clonage
         } else {
-            console.log('Local version is up to date. No action needed.');
-            //prepare module for local development
-            var packageVersion = prepareModuleForLocalDevelopment(moduleName);
-            // update module in assembly
-            updateModuleInAssembly(packageVersion);
-            return;
+            const localVersion = getLocalVersion();
+            const remoteVersion = getRemoteVersion(moduleRepoUrl, branch);
+
+            if (compareVersions(remoteVersion, localVersion) > 0) {
+                console.log(`Updating module from ${localVersion} to ${remoteVersion}`);
+                shell.exec('git fetch');
+                shell.exec(`git checkout ${branch}`);
+                shell.exec('git pull');
+            } else {
+                console.log('Local version is up to date. No action needed.');
+                //prepare module for local development
+                var packageVersion = prepareModuleForLocalDevelopment(moduleName);
+                // update module in assembly
+                updateModuleInAssembly(packageVersion);
+                return;
+            }
         }
-    } else {
+    }
+    
+    // Si on arrive ici, c'est qu'on doit cloner (soit le module n'existe pas, soit package.json manquait)
+    if (!fs.existsSync(moduleName)) {
         console.log('Cloning module from ' + moduleRepoUrl);
         shell.exec('git clone ' + moduleRepoUrl);
         shell.cd(moduleName);
         shell.exec('git checkout ' + branch);
         
-        shell.exec('git checkout '+ branch, (error, stdout, stderr) => {
-            if (error) {
-                console.error(`exec error: ${error}`);
-                return;
-            }
-            console.log(`stdout: ${stdout}`);
-            console.error(`stderr: ${stderr}`);
-            packageVersion = prepareModuleForLocalDevelopment(moduleName);
-            updateModuleInAssembly(packageVersion);
-        });
+        // Préparer le module pour le développement local
+        var packageVersion = prepareModuleForLocalDevelopment(moduleName);
+        updateModuleInAssembly(packageVersion);
     }
     
 

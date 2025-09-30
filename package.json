@@ -34,16 +34,16 @@
     "@openimis/fe-payer": "file:openimis_modules_local/openimis-fe-payer_js",
     "@openimis/fe-payment": "file:openimis_modules_local/openimis-fe-payment_js",
     "@openimis/fe-payment_cycle": "file:openimis_modules_local/openimis-fe-payment_cycle_js",
-    "@openimis/fe-payroll": "file:openimis_modules_local/openimis-fe-payroll_js",
     "@openimis/fe-policy": "file:openimis_modules_local/openimis-fe-policy_js",
     "@openimis/fe-policyholder": "file:openimis_modules_local/openimis-fe-policyholder_js",
     "@openimis/fe-product": "file:openimis_modules_local/openimis-fe-product_js",
     "@openimis/fe-profile": "file:openimis_modules_local/openimis-fe-profile_js",
     "@openimis/fe-social_protection": "file:openimis_modules_local/openimis-fe-social_protection_js",
     "@openimis/fe-tasks_management": "file:openimis_modules_local/openimis-fe-tasks_management_js",
+    "@openimis/fe-tools": "file:openimis_modules_local/openimis-fe-tools_js",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lodash-uuid": "^0.0.3",
     "moment": "^2.25.3",
     "prop-types": "^15.7.2",
@@ -57,8 +57,8 @@
     "redux": "^4.0.5",
     "redux-api-middleware": "^3.2.1",
     "redux-thunk": "^2.3.0",
-    "shelljs": "^0.8.4",
-    "@openimis/fe-tools": "file:openimis_modules_local/openimis-fe-tools_js"
+    "shelljs": "^0.8.5",
+    "@openimis/fe-payroll": "file:openimis_modules_local/openimis-fe-payroll_js"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -90,7 +90,8 @@
     ]
   },
   "resolutions": {
-    "caniuse-lite": "1.0.30001688"
+    "caniuse-lite": "1.0.30001737",
+    "minimatch": "^5.1.6"
   },
   "devDependencies": {
     "http-proxy-middleware": "^2.0.1",

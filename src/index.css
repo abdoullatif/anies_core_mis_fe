@@ -16,3 +16,21 @@ body {
 .bootstrap {
   flex-grow: 1;
 }
+
+/* Fix pour le sélecteur de langue avec menuLeft: true */
+.language-selector {
+  position: fixed !important;
+  top: 10px !important;
+  right: 10px !important;
+  z-index: 1300 !important;
+  background: white !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Assurer que le sélecteur reste visible même avec menu latéral */
+[data-menu-left="true"] .language-selector {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}

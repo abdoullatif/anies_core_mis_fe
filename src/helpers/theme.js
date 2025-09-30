@@ -60,6 +60,20 @@ const theme = createTheme({
       fontSize: 16,
     },
   },
+  languageSelector: {
+    position: "fixed",
+    top: 10,
+    right: 10,
+    zIndex: 1300,
+    backgroundColor: "white",
+    borderRadius: 4,
+    boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+    "&.menuLeft": {
+      display: "block",
+      visibility: "visible",
+      opacity: 1,
+    }
+  },
   page: {
     padding: 16,
     locked: {

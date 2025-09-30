@@ -1,0 +1,412 @@
+{
+  "timestamp": "2025-09-29T22:56:52.414Z",
+  "total": 31,
+  "ok": 0,
+  "issues": 31,
+  "missing": 0,
+  "modules": [
+    {
+      "pkg": "@openimis/fe-core",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-core_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-core_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "11011a7 resolution des problemes de crsf et update interface user",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-individual",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-individual_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-individual_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "7bebcfa Merge pull request #100 from openimis/feature/OS-94",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-social_protection",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-social_protection_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-social_protection_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "3f54c29 Merge pull request #114 from openimis/feature/OS-94",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-opensearch_reports",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-opensearch_reports_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-opensearch_reports_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "f7255aa Merge pull request #23 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-home",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-home_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-home_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "268bf98 Merge pull request #27 from openimis/release/24.10",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-location",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-location_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-location_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "8a8eef2 Merge pull request #91 from openimis/feature/picker-title",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-insuree",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-insuree_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-insuree_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "e8ee9fa Merge pull request #155 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-medical",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-medical_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-medical_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "c2b5760 Merge pull request #69 from mngoe/cs-merge",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-medical_pricelist",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-medical_pricelist_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-medical_pricelist_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "03846e0 OP-1817: hide validity dates if historical data not requested (#39)",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-product",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-product_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-product_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "baf32e4 Merge pull request #83 from mngoe/OP-1789",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-policy",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-policy_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-policy_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "b6293c7 OP-2511: removed redundat console logs",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-payer",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-payer_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-payer_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "4363d66 Merge pull request #27 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-contribution",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-contribution_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-contribution_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "732c09c Merge pull request #49 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-payment",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-payment_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-payment_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "d090967 Merge pull request #29 from mngoe/feature-30048",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-claim",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-claim_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-claim_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "459d595 OP-2348: removed qtyAdjusted - no used anymore on model level (#216)",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-claim_batch",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-claim_batch_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-claim_batch_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "3716381 Merge pull request #30 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-admin",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-admin_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-admin_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "46af064 OP-2500: changed filter of health facility to standard id",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-tools",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-tools_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-tools_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "8f8e596 Update @openimis/fe-tools - 2025-09-29T22:19:43.099Z",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-profile",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-profile_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-profile_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "c5bc704 Merge pull request #28 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-calculation",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-calculation_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-calculation_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "4857cda Merge pull request #40 from openimis/feature/op-2326-3",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-policyholder",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-policyholder_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-policyholder_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "d5ac007 OP-2506: added missing id for policyholder submenu entry",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-contribution_plan",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-contribution_plan_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-contribution_plan_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "472cc36 Merge pull request #96 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-payment_cycle",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-payment_cycle_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-payment_cycle_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "2f232f6 Merge pull request #18 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-contract",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-contract_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-contract_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "a5c68ea OP-2356: making policyholder mandatory in contract",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-tasks_management",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-tasks_management_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-tasks_management_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "2057c00 Merge pull request #56 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-invoice",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-invoice_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-invoice_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "a7876d7 Merge pull request #58 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-grievance_social_protection",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-grievance_social_protection_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-grievance_social_protection_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "e4e881b Merge pull request #21 from openimis/feature/OP-2344",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-language_fr",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-language_fr_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-language_fr_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "8df0ac3 25.04",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-claim_sampling",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-claim_sampling_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-claim_sampling_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "4dcc197 move workflow",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-deduplication",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-deduplication_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-deduplication_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "490e2d6 Update npmpublish.yml",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    },
+    {
+      "pkg": "@openimis/fe-payroll",
+      "status": "issues",
+      "origin": "https://github.com/abdoullatif/openimis-fe-payroll_js.git",
+      "upstream": "Not set",
+      "expectedUpstream": "https://github.com/openimis/openimis-fe-payroll_js",
+      "currentBranch": "release/25.04",
+      "lastCommit": "7eb5848 Merge pull request #63 from openimis/feature/OSB-11",
+      "issues": [
+        "No upstream remote set"
+      ],
+      "hasChanges": false
+    }
+  ]
+}
