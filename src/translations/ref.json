@@ -59,5 +59,12 @@
   "SubCategoryLeve1Picker.placeholder": "Sous-catégorie",
   "ticket.assignedRole": "Rôle assigné",
   "ticket.escalationLevel": "Niveau d’escalade",
-  "ticket.lastEscalateAt": "Dernière escalade"
+  "ticket.lastEscalateAt": "Dernière escalade",
+  "Username": "Nom d'utilisateur",
+  "Password": "Mot de passe",
+  "loginBtn": "Connexion",
+  "forgotPassword": "Mot de passe oublié",
+  "thirdPartyType.payer": "Payeur",
+  "thirdPartyType.user": "Utilisateur",
+  "subjectType.batchrun": "Traitement groupé"
 }
