@@ -66,5 +66,17 @@
   "forgotPassword": "Mot de passe oublié",
   "thirdPartyType.payer": "Payeur",
   "thirdPartyType.user": "Utilisateur",
-  "subjectType.batchrun": "Traitement groupé"
+  "subjectType.batchrun": "Traitement groupé",
+  "status.OPEN": "OUVERT",
+  "status.RECEIVED": "REÇU",
+  "status.RESOLVED": "RESOLU",
+  "status.IN_PROGRESS": "EN COURS",
+  "status.CLOSED": "FERMÉ",
+  "addNewticketTooltip": "Créer une nouvelle plainte",
+  "ticket.menu.createNative": "Créer une plainte (formulaire natif)",
+  "ticket.menu.createNative.help": "Saisie directe de la plainte dans CoreMIS",
+  "ticket.menu.openKobo": "Ouvrir le formulaire Kobo",
+  "ticket.menu.openKobo.help": "Ouvre le formulaire KoboToolbox dans un nouvel onglet",
+  "ticket.menu.openKobo.missing": "Aucune URL Kobo configurée",
+  "ticket.page.title": "Gestion des plaintes"
 }

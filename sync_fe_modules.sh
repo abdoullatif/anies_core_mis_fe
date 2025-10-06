@@ -53,7 +53,7 @@ jq -c '.modules[]' "$JSON_FILE" | while read -r module; do
     git fetch upstream
 
     git checkout "$BRANCH" 2>/dev/null || {
-      echo "⚠️  Branche $BRANCH introuvable. Passage au suivant."
+      echo "Branche $BRANCH introuvable. Passage au suivant."
       cd "$REPO_BASE_PATH"
       continue
     }
@@ -80,5 +80,5 @@ jq -c '.modules[]' "$JSON_FILE" | while read -r module; do
 done
 
 echo "Synchronisation terminée pour tous les modules."
-# ./sync_fe_modules.sh ./modules.json release/25.04 ../src sackofils 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
-# ./sync_fe_modules.sh ./modules.json release/25.04 /Users/ssacko/Documents/_workspace/coremis/anies/anies_core_mis_fe/openimis_modules_local sackofils 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
+# ./sync_fe_modules.sh ./modules.json release/25.04 ../src
+# ./sync_fe_modules.sh ./modules.json release/25.04 /Users/ssacko/Documents/_workspace/coremis/anies/anies_core_mis_fe/openimis_modules_local
