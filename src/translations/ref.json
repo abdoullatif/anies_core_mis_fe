@@ -59,5 +59,12 @@
   "SubCategoryLeve1Picker.placeholder": "Sous-catégorie",
   "ticket.assignedRole": "Rôle assigné",
   "ticket.escalationLevel": "Niveau d’escalade",
-  "ticket.lastEscalateAt": "Dernière escalade"
+  "ticket.lastEscalateAt": "Dernière escalade",
+  "addNewticketTooltip": "Créer une nouvelle plainte",
+  "ticket.menu.createNative": "Créer une plainte (formulaire natif)",
+  "ticket.menu.createNative.help": "Saisie directe de la plainte dans CoreMIS",
+  "ticket.menu.openKobo": "Ouvrir le formulaire Kobo",
+  "ticket.menu.openKobo.help": "Ouvre le formulaire KoboToolbox dans un nouvel onglet",
+  "ticket.menu.openKobo.missing": "Aucune URL Kobo configurée",
+  "ticket.page.title": "Gestion des plaintes"
 }
