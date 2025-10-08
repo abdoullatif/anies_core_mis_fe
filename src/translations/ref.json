@@ -66,5 +66,13 @@
   "ticket.menu.openKobo": "Ouvrir le formulaire Kobo",
   "ticket.menu.openKobo.help": "Ouvre le formulaire KoboToolbox dans un nouvel onglet",
   "ticket.menu.openKobo.missing": "Aucune URL Kobo configurée",
-  "ticket.page.title": "Gestion des plaintes"
+  "ticket.page.title": "Gestion des plaintes",
+  "thirdPartyType.payer": "Payeur",
+  "thirdPartyType.user": "Utilisateur",
+  "subjectType.batchrun": "Traitement groupé",
+  "status.OPEN": "OUVERT",
+  "status.RECEIVED": "REÇU",
+  "status.RESOLVED": "RESOLU",
+  "status.IN_PROGRESS": "EN COURS",
+  "status.CLOSED": "FERMÉ"
 }
