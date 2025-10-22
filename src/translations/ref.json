@@ -86,5 +86,5 @@
   "priority.Normal": "Normal",
   "priority.High": "Élevé",
   "priority.Critical": "Critique",
-  "priority.null": ""
+  "priority.null": " - "
 }
